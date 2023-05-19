@@ -1,0 +1,28 @@
+.menu {
+  background-color: #5d3ebd;
+  width: 200px;
+  /* padding: 10px; */
+}
+
+.menu ul {
+  /* list-style: "✅ "; */
+  list-style-image: url(./ball3.svg);
+  padding: 0;
+  list-style-position: inside;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu li:hover {
+  background-color: aliceblue;
+}
+.menu li:hover a {
+  color: #5d3ebd;
+}

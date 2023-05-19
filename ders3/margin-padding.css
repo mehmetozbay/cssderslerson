@@ -1,0 +1,19 @@
+.container {
+  background-color: aqua;
+  padding: 10px;
+}
+.container span {
+  background-color: rgb(255, 127, 127);
+}
+
+.container .item-1 {
+  background-color: bisque;
+  padding: 10px 5px 10px 20px;
+  margin: 10px 10px;
+}
+
+.container .item-2 {
+  background-color: rgb(255, 196, 237);
+  padding: 10px 20px;
+  margin: 10px 10px;
+}

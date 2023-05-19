@@ -1,0 +1,9 @@
+.item {
+  background-color: aqua;
+  display: inline;
+}
+.item-text {
+  background-color: rgb(196, 60, 18);
+
+  display: block;
+}
