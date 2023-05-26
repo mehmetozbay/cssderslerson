@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .menu ul {
+      list-style: none;
+      background-color: brown;
+      list-style-position: inside;
+      text-align: center;
+    }
+
+    .menu ul a {
+      text-decoration: none;
+      color: aliceblue;
+      padding: 10px;
+      display: inline-block;
+    }
+    .menu ul li {
+      display: inline-block;
+    }
+    .menu ul li::after {
+      content: "|";
+      color: #fff;
+    }
+
+    .menu ul li:last-child::after {
+      content: "";
+    }
+    .menu ul li a:hover {
+      background-color: #fff;
+      color: brown;
+    }
+    .menu a::after {
+      content: "";
+      height: 2px;
+      width: 0px;
+      background-color: #fff;
+      margin-top: 5px;
+      display: block;
+    }
+
+    .menu a:hover::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: brown;
+      margin-top: 5px;
+      display: block;
+    }
+    .text::after {
+      content: " ahmet";
+    }
+    .text::before {
+      content: " test ";
+    }
+  </style>
+  <body>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkimizda</a></li>
+        <li><a href="#">Hakkimizda</a></li>
+        <li><a href="#">Hakkimizda</a></li>
+        <li><a href="#">Iletisim</a></li>
+      </ul>
+      <span class="text">deneme</span>
+    </div>
+  </body>
+</html>

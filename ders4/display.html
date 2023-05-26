@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      background-color: brown;
+      width: 300px;
+    }
+    .container p {
+      display: inline-block;
+    }
+
+    .container p:first-child {
+      color: aqua;
+    }
+    .container p:last-child {
+      color: rgb(30, 255, 0);
+    }
+    .container p:nth-child(2) {
+      color: rgb(37, 0, 9);
+    }
+
+    .text {
+      background-color: aqua;
+      width: 200px;
+      display: inline-block;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p>Merhaba</p>
+      <p>Merhaba</p>
+      <p>Merhaba</p>
+    </div>
+    <span class="text">Ahmet</span>
+  </body>
+</html>

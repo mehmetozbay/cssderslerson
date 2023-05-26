@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    .hamburger {
+      background-color: brown;
+      display: inline-block;
+      padding: 5px 10px;
+      color: #fff;
+    }
+
+    #menu-key {
+      display: none;
+    }
+    .menu-content {
+      background-color: brown;
+      width: 180px;
+      margin-top: -15px;
+    }
+    .menu-content ul {
+      list-style: none;
+    }
+    .menu-content ul a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 0px 10px 0px;
+      display: inline-block;
+    }
+
+    #menu-key:checked + .menu-content {
+      display: none;
+    }
+
+    .hamburger i {
+      font-size: 20px;
+      color: black;
+    }
+    .menu-content ul li i {
+      margin-right: 10px;
+    }
+    .menu-content ul li::before {
+      content: "\f00c";
+      font: var(--fa-font-solid);
+      color: #fff;
+      margin-right: 10px;
+    }
+  </style>
+
+  <body>
+    <label class="hamburger" for="menu-key"
+      ><i class="fa-solid fa-bars"></i
+    ></label>
+    <input type="checkbox" name="menu" id="menu-key" />
+
+    <div class="menu-content">
+      <ul>
+        <!-- <li>
+          <a href="#"><i class="fa-solid fa-house"></i>Anasayfa</a>
+        </li> -->
+        <li>
+          <a href="#">Anasayfa</a>
+        </li>
+        <li><a href="#">Hakkimizda</a></li>
+        <li><a href="#">Iletisim</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
