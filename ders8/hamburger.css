@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.toggle {
+  position: relative;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.toggle span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: aliceblue;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.toggle span:first-child {
+  transform: translateY(-10px);
+}
+
+.toggle span:last-child {
+  transform: translateY(10px);
+}
+
+#menu-bar {
+  display: none;
+}
+
+#menu-bar:checked + label span:nth-child(2) {
+  display: none;
+}
+
+#menu-bar:checked + label span:first-child {
+  transform: rotate(45deg);
+}
+#menu-bar:checked + label span:last-child {
+  transform: rotate(315deg);
+}

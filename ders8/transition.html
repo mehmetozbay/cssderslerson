@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+
+        margin: 200px;
+        background-color: red;
+
+        transition: all 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box p {
+        /* display: none; */
+        opacity: 0;
+        transition: opacity 3s;
+      }
+      .box:hover {
+        background-color: aquamarine;
+        /* width: 300px;
+        height: 200px; */
+        transform: rotateY(360deg) scale(4);
+      }
+
+      .box:hover p {
+        display: block;
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box"><p>Merhaba</p></div>
+  </body>
+</html>

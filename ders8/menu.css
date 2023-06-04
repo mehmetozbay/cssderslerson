@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.toggle {
+  position: relative;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.toggle span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: aliceblue;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.toggle span:first-child {
+  transform: translateY(-10px);
+}
+
+.toggle span:last-child {
+  transform: translateY(10px);
+}
+
+#menu-bar {
+  display: none;
+}
+
+#menu-bar:checked + label span:nth-child(2) {
+  display: none;
+}
+
+#menu-bar:checked + label span:first-child {
+  transform: rotate(45deg);
+}
+#menu-bar:checked + label span:last-child {
+  transform: rotate(315deg);
+}
+
+/* .yanmenu-close {
+  height: 100%;
+  width: 50px;
+  background-color: aqua;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+} */
+
+.yanmenu-open {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 100%;
+  z-index: 1;
+  left: -300px;
+  transition: all 1s;
+}
+
+.yanmenu-open ul {
+  padding: 0px;
+  margin: 80px;
+  list-style: none;
+}
+
+.yanmenu-open ul a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px 10px;
+  display: inline-block;
+}
+#menu-bar:checked ~ .yanmenu-open {
+  left: 0px;
+}
